@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<base target="_blank">
+	<title>Notus Ref</title>
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/vue.js"></script>
+	<script src="js/main.js"></script>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<H1>Notus' Ref</H1>
+<div id="article_tags">
+	<dl class="tag-row" v-for="item in dtlist" track-by="$index">
+		<div class="dlbox">
+			<dt>{{item.dt}}</dt>
+			<div class="ddbox">
+				<dd v-for="site in item.dd" track-by="$index" :title="site.title"><a href="{{site.url}}">{{site.name}}</a></dd>
+			</div>
+		</div>
+	</dl>	
+</div>
+
+</body>
+</html>
