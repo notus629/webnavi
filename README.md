@@ -3,3 +3,7 @@
 ## 说明
  - 简单的个人常用网址导航
  - 使用了vue.js
+ - Author: Notus(hehe_xiao@qq.com
+ 
+ ## Demo
+ - [here](notus629.github.io/webnavi)
