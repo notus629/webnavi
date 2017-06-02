@@ -6,4 +6,4 @@
  - Author: Notus(hehe_xiao@qq.com)
  
  ## Demo
- - [here](https://notus629.github.io/webnavi/)
+ - [demo1](https://notus629.github.io/webnavi/) or [demo2](http://xm.bugber.com/public/demo/webnavi/)

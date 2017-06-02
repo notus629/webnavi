@@ -17,7 +17,10 @@
 		<div class="dlbox">
 			<dt>{{item.dt}}</dt>
 			<div class="ddbox">
-				<dd v-for="site in item.dd" track-by="$index" :title="site.title"><a href="{{site.url}}">{{site.name}}</a></dd>
+				<dd v-for="site in item.dd" track-by="$index" :title="site.title">
+					<a href="{{site.url}}" v-if="site.url !== '|' && site.url !== '' ">{{site.name}}</a>
+					<div v-if="site.url === '|' "> | </div>
+				</dd>
 			</div>
 		</div>
 	</dl>	
